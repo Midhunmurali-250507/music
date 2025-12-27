@@ -1,0 +1,166 @@
+/* ---------- Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------- Body ---------- */
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* ---------- Player Container ---------- */
+.player-container {
+    width: 90%;
+    max-width: 380px;
+    background: #020617;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Header ---------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    background: #1e293b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* ---------- Album Art ---------- */
+.album-art {
+    height: 260px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+/* ---------- Song Info ---------- */
+.song-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.song-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.song-info p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* ---------- Progress ---------- */
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 40%;
+    height: 100%;
+    background: #38bdf8;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin: 8px 0 20px;
+}
+
+/* ---------- Controls ---------- */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.control-btn {
+    width: 50px;
+    height: 50px;
+    background: #1e293b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.control-btn:hover {
+    transform: scale(1.1);
+}
+
+.play-btn {
+    width: 65px;
+    height: 65px;
+    background: #38bdf8;
+    color: #020617;
+    font-size: 1.5rem;
+}
+
+/* ---------- Playlist ---------- */
+.playlist h4 {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e293b;
+    padding: 10px 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.track span {
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+.track.active {
+    background: #38bdf8;
+    color: #020617;
+}
+
+.track.active span {
+    color: #020617;
+}
